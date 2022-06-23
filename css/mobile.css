@@ -1,0 +1,76 @@
+#what .items {
+    display: block;
+    padding: 2rem;
+}
+
+
+/* Align icons to left */
+
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+
+
+/* Position Icon */
+
+#what .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+
+/* Smartphones */
+
+@media(max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar .logo {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    #navbar ul {
+        padding: 0.5rem;
+    }
+    #showcase .showcase-content {
+        top: 143px;
+        margin-top: -2rem;
+    }
+    .fullscreen-bg {
+        top: 50px;
+    }
+    #who {
+        display: block;
+    }
+    #who .who-img {
+        height: 200px;
+        width: 90vw;
+    }
+    #clients .items img {
+        width: 80%;
+    }
+   /* #clients .items div:last-child {
+        display: none;
+    }
+    */
+    #contact {
+        /* flex-direction: column; */
+        display: block;
+    }
+    #contact #map {
+        height: 300px;
+        border-top: 4px solid #333333;
+    }
+    #main-footer .footer-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 1rem;
+        height: 10rem;
+        background-color: #000000;
+    }
+}

@@ -1,4 +1,4 @@
-[![yplate](https://img.shields.io/badge/latest_build-link-blue)](https://sanganan-prayog.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/b8a0d3a3-c87c-4988-8fed-8824e8fcb09a/deploy-status)](https://app.netlify.com/sites/sanganan-prayog/deploys) [![license](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![website](https://img.shields.io/badge/latest_build-link-blue)](https://sanganan-prayog.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/b8a0d3a3-c87c-4988-8fed-8824e8fcb09a/deploy-status)](https://app.netlify.com/sites/sanganan-prayog/deploys) [![license](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 
 <p align="center">

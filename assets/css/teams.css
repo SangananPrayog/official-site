@@ -1,0 +1,112 @@
+html{
+    font-size: 62.5;
+    scroll-behavior: smooth;
+    user-select: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.names{
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+.designation{
+    font-size: 0.8rem;
+    padding: 1px;
+}
+
+body{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/Teams/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.team{
+    position: relative;
+    max-width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin:10px;
+    box-shadow: 4px 4px 10px rgba(4, 150, 43, 0.838);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.052);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.team:hover{
+    transform: scale(1.01);
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.142);
+}
+
+.members{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.team h2{
+    padding: 20px;
+    color: rgba(4, 150, 43, 0.838);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.members::-webkit-scrollbar {
+    -webkit-appearance:none;
+}
+
+.member{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.member img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+@media (max-width:767px) {
+    .members{
+        margin: 5px;
+    }
+    
+    .names{
+        font-size: 1.1rem;
+        padding: 2px;
+    }
+    .team h2{
+        padding: 10px;
+        margin-top: 5px;
+        color: rgba(4, 150, 43, 0.838);
+        text-align: center;
+        font-size: 1.75rem;
+    }
+    .member img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+}

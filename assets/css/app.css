@@ -1,0 +1,160 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    color:rgb(178, 185, 137);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} /*Acts at all the pages*/ 
+
+/* ------------------------------------ CSS FOR IMAGE SLIDER ----------------------------------------------------- */
+.main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.main .frame{
+    overflow: hidden;
+    height: 400px;
+    width: 800px;
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 800px;}
+    20% {left: 1600px;}
+    30% {left: 2400px;}
+    40% {left: 3200px;}
+    50% {left: 4000px;}
+    60% {left: 3200px;}
+    70% {left: 2400px;}
+    80% {left: 1600px;}
+    90% {left: 800px;}
+    100% {left:0px;}
+}
+
+.main .frame .slide-image{
+    width: 4800px;
+    height: 400px;
+    margin: 0 0 0 -4000px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state: running;
+}
+
+.main .frame .slide-image .img-container{
+    height: 400px;
+    width: 800px;
+    position: relative;
+    float: left;
+}
+
+.main .frame .slide-image .img-container img{
+    height: 400px;
+    width: 800px;
+}
+
+/* ----------------------------- CSS FOR IMAGE SLIDER END HERE ------------------------------------------------------------------ */
+
+
+.terms-policy{
+    text-align: left;
+}
+
+header{
+    color:rgb(224, 218, 170);
+    background-color: rgb(6, 112, 77);
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 2.5;
+    padding:0.5em 0.5em;
+    text-align: center;
+}
+
+/*Navbar home*/
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav{
+    font-size:1.5em;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(4, 150, 43, 0.838);
+    padding: 0.5em 1em;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20;
+    color: rgb(6, 112, 77);
+}
+
+
+button{
+    background:rgb(0, 0, 0);
+    color:rgb(253, 253, 252);
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 1em 1em;
+    font-size: 1em;
+    transition: all 0.20s;
+}
+button:hover{
+    border-color:rgb(255, 138, 59);
+    color:yellow;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform:translate(-0.25em);
+}/*home signup button*/
+
+form input{
+    border-radius: 15%;
+    background-color: rgb(231, 215, 185);
+}
+
+/*Nav bar with media queries*/
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav{
+    font-size:1.5em;
+    display:flex;
+    justify-content: space-between;
+}
+
+img{
+    width:70%;
+    margin: 1.6666%;
+}
+
+footer{
+    color:rgb(226, 218, 158);
+    background-color: rgb(3, 70, 48);
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+    padding:0.5em 0.5em;
+}
+
+#header{
+    background-color: rgb(4, 48, 37);
+}
+
+.card{
+    background-color: black;
+}

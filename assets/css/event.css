@@ -1,7 +1,7 @@
 .rocket{
     color: black;
     font-weight: bolder;
-    background-image: url(image/rocket1.png);
+    background-image: url(img/rocket1.png);
     z-index: 1000;
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 .rocket:hover{
     color: rgb(255, 145, 0);
     font-weight: bolder;
-    background-image: url(image.event/rocketlaunch1.png);
+    background-image: url(img/rocketlaunch1.png);
     z-index: 1000;
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
   /* .car{width: 70%;} */
 
   .media{
-    background-image: url(image.event/rocket1.png);
+    background-image: url(img/rocket1.png);
     z-index: 1000;
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
     transition-duration: 1s; */
   }
   .media:hover{
-    background-image: url(image/rocketlaunch1.png);
+    background-image: url(img/rocketlaunch1.png);
     z-index: 1000;
     background-size: contain;
     background-repeat: no-repeat;

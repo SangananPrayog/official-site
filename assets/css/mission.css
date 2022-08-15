@@ -1,0 +1,230 @@
+.mission-txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px 10px 10px;
+  background-color: aquamarine;
+}
+
+/* Section: Who We Are */
+
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+.who-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fade-in-text {
+  /* font-family: Arial; */
+  /* font-size: 60px; */
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  text-shadow: 2px 2px #60a5f4;
+  transition: 0.5s;
+  opacity: 0.9;
+  -webkit-background-clip: text;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fade-in-text:hover{
+  letter-spacing: 1px;
+}
+
+.who-img {
+  max-height: fit-content;
+  max-width: fit-content;
+  display: inline-block;
+  padding-right: 10px;
+  float: left;
+}
+
+#para1 {
+  display: inline-block;
+  float: left;
+}
+
+#founder-name{
+  margin-left: 130px;
+}
+
+
+/* projects */
+
+#projects{
+  /* margin-bottom: 20px; */
+  background: rgb(52, 58, 64);
+  padding-bottom: 70px;
+}
+
+.slider {
+  width: 700px;
+  margin: 0 auto ;
+  text-align: center;
+}
+
+.slider .photos {
+  position: relative;
+  height: 365px;
+}
+
+.photos{
+  margin-bottom: 0;
+}
+
+.text-projects{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.slider .photos img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2.5s;
+}
+
+.slider .photos img.shown {
+  opacity: 1;
+}
+
+.prev:before, .next:before {
+color: rgb(13, 13, 13);
+font-size: 60px;
+position: absolute;
+top: 38%;
+cursor: pointer;
+}
+
+.prev:before {
+/* content: "<"; */
+font-family: "Font Awesome 5 Free";
+content: "\e555";
+display: inline-block;
+padding-right: 3px;
+vertical-align: middle;
+font-weight: 900;
+font-size: 2.1em;
+margin-top: 34px; 
+/* background-color: darkgrey; */
+left: 0; 
+}
+
+.next:before {
+  /* content: ">"; */
+  font-family: "Font Awesome 5 Free";
+  content: "\e555";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 2.2em;
+  margin-top: 34px;
+  padding-right: 0px;
+  right: 0;
+}
+
+.slider {
+  transition: transform .2s;
+}
+
+.slider:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .slider{
+      width: 350px;
+  }
+  .mission-txt{
+    padding-right: 10px;
+  }
+  #para1{
+    display: inline-block;
+    margin-left: 5px;
+  }
+  #who {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .who-text{
+    display: inline-block;
+    width: 350px;
+  }
+  #founder-name{
+    margin-top: 0px;
+  }
+  html{
+      overflow-x: hidden;
+  }
+  body{
+
+      overflow-x: hidden;
+  }
+  .event-container img{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+     
+  }
+  .photos img{
+      margin-top: 100px;
+
+  }
+  .slider:hover {
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: none;
+      cursor: pointer;
+  }
+  
+  .btn-sm{
+      margin-right: 18px;
+  }
+  .about-us{
+      text-align: center;
+  }
+  .about-us .us{
+      display: grid;
+  }
+}

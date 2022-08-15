@@ -1,0 +1,79 @@
+.rocket{
+    color: black;
+    font-weight: bolder;
+    background-image: url(img/rocket1.png);
+    z-index: 1000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 125px;
+    background-position: center;
+    margin: 0px 130px 0px 130px;
+    padding: 2px 0px 1px 0px;
+    position: absolute;
+    top: 70%;
+    /* width: 100%; */
+    /* width: 200px;s */
+    /* position: relative; */
+    /* left: 20px; */
+}
+.rocket:hover{
+    color: rgb(255, 145, 0);
+    font-weight: bolder;
+    background-image: url(img/rocketlaunch1.png);
+    z-index: 1000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 125px;
+    /* width: 125px; */
+    background-position: center;
+    margin: 0px 130px 0px 130px;
+    /* padding: 2px 0px 1px 0px; */
+    position: absolute;
+    top: 70%;
+    transition: ease-in-out;
+    transition-duration: 1s;
+    /* width: 100%; */
+}
+@media only screen and (min-width: 950px) {
+  .media{display: none;}
+  .am{display: none;}
+
+}
+@media only screen and (max-width: 949px) {
+  /* .car{width: 70%;} */
+
+  .media{
+    background-image: url(img/rocket1.png);
+    z-index: 1000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40%!important;
+    width: 40%!important;
+    background-position: center;
+    /* margin: 0px 50px 0px 130px; */
+    /* padding: 2px 0px 1px 0px; */
+    position: absolute;
+    top: 60%;
+    /* transition: ease-in-out;
+    transition-duration: 1s; */
+  }
+  .media:hover{
+    background-image: url(img/rocketlaunch1.png);
+    z-index: 1000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40%!important;
+    width: 40%!important;
+    background-position: center;
+    margin: 0px 130px 0px 130px;
+    /* padding: 2px 0px 1px 0px; */
+    position: absolute;
+    top: 60%;
+    /* transition: ease-in-out;
+    transition-duration: 1s; */
+  }
+}
+.hvr:hover{color: rgb(3, 165, 3)!important;}
+
+.hvr{color:white!important;}
+

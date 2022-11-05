@@ -3,7 +3,7 @@ body{
     background: #010101;
 }
 nav{
-    animation: translateIn ease 0.9s;
+    animation: translateIn ease 0.25s;
     animation-iteration-count: 1;
 }
 @keyframes translateIn {
@@ -30,7 +30,7 @@ nav{
 .nav-link:after {
   display:block;
   content: '';
-  border-bottom: solid 1px #a8e3ec;  
+  border-bottom: solid 1px rgb(0, 221, 255);  
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
 }
@@ -116,15 +116,15 @@ nav{
    justify-content: space-between;
    animation-name: slideIn;
    animation-timing-function: ease-in;
-   animation-duration: 0.8s;
+   animation-duration: 0.5s;
 }
 @keyframes slideIn{
     0%{
-        transform:translateY(200px) scale(0.5);
+        transform:translateY(200px) ;
     }
     
     100%{
-        transform:translateY(0) scale(1);
+        transform:translateY(0) ;
     }
 }
 .project-card{

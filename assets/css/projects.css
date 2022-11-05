@@ -1,5 +1,6 @@
+
 body{
-    background: #EDECED;
+    background: #010101;
 }
 nav{
     animation: translateIn ease 0.9s;
@@ -46,24 +47,25 @@ nav{
     font-weight: 200;
     font-size: 26px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: white;
 }
 .navbar-brand:hover{
     transform: scale(1.009) ;
     color: white;
 }
 .navbar-new{
-    background: rgba(0, 0, 0, 0.719);
-    height: 70px;
+    
 }
 .container-fluid{
     margin-left:9%;
     margin-right:9%;
 }
 .background-img{
-    background-image: url("/img/Rectangle\ 12.png");
-    background-color: #a8dadc;
-    min-height:550px;
+    background-image: url("/img/Reactangle\ 12.jpg");
+    background-position: 462px;
+    background-repeat: no-repeat;
+    background-color: #010101;
+    min-height:1000px;
     background-size: cover;
     animation: bgEntry 0.8s ease ;
 }
@@ -81,9 +83,11 @@ nav{
     font-family: 'Cabin';
     font-size: 75px;
     line-height: 63px;
-    color: #14202afa;
-    margin-top:150px;
-    text-shadow: rgba(255, 255, 255, 0.53) 1px 0 10px;
+    background: linear-gradient(90deg, #762A7B 18.47%, #68D2F1 54.39%);
+    background-size:39%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .page-header{
     margin-left:140px;
@@ -106,7 +110,7 @@ nav{
 .project-cards{
     margin-left:140px;
     margin-right:140px;
-   margin-top:-200px;
+   margin-top:-550px;
    display:flex;
    flex-wrap:wrap;
    justify-content: space-between;
@@ -126,11 +130,10 @@ nav{
 .project-card{
     width: 367px;
     height:500px;
-    background-color: white;
-    border-radius: 8px;
+    background-color: #111111;
+    border-radius: 7px;
     overflow: hidden;
     margin-top:80px;
-    box-shadow: 1px 1px 5px  rgb(186, 183, 183);
     transition: all 0.2s ease 0s;
 }
 .project-card:hover{
@@ -177,6 +180,7 @@ nav{
     margin-bottom: 32px;
     font-family: 'Cabin';
     font-style: normal;
+    color: white;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -195,7 +199,7 @@ nav{
     height: 462px;
     left: -1px;
     top: 1810px;
-    background: #21283B;
+    background: #121212;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,6 +272,7 @@ nav{
     .project-cards{
         margin-left:0;
         margin-right:0;
+        margin-top: -700px;
         align-items: center;
         justify-content: center;
     }
@@ -279,7 +284,7 @@ nav{
         margin-top: 8px;
         width: 100vw;
         padding-left: 10px;
-        background: rgba(0, 0, 0, 0.719);
+        background: rgba(0, 0, 0, 0);
     }
     .nav-link{
         text-align: center;
@@ -288,5 +293,69 @@ nav{
         height: 450px;
         width: 315px;
     }
+    .background-img{
+        background-position: -187px;
+    }
+   .page-header > h1 {
+    margin-top:100px;
+    background-position: -100px;
+    text-align: center;
+    background-size: 200%;
+}
 
 }
+
+  
+  /* The animation starts here */
+  .animated-box {
+    position: relative;
+  }
+  
+  .animated-box:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
+    background-size: 300% 300%;
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  
+  .animated-box.in:hover:after {
+    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+  }
+  
+  /* motion */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 15% 0%;
+    }
+    50% {
+      background-position: 85% 100%;
+    }
+    100% {
+      background-position: 15% 0%;
+    }
+  }
+  
+  @keyframes frame-enter {
+    0% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    25% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    50% {
+      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+    }
+    75% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+    }
+  }
+  

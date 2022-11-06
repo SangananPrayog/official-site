@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url(2084366.jpg);
+	width: 100%;
+	height: 100vh;
+	
+}
+nav{
+    animation: translateIn ease 0.9s;
+    animation-iteration-count: 1;
+}
+@keyframes translateIn {
+    0%{
+        transform:translateY(-100px) ;
+    }
+    100%{
+        transform: translateY(0) ;
+    }
+}
+.nav-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-right:20px;
+    position:relative;
+}
+.nav-link:hover{
+    color:white;
+}
+.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #a8e3ec;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+.nav-link:after{  transform-origin:  0% 50%; }
+.navbar-brand-img{
+    margin-top: 4px;
+}
+.navbar-brand{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.navbar-new{
+    background: rgba(0, 0, 0, 0.719);
+    height: 70px;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: 0 auto;
+    margin-top: 20px;
+}
+.p{
+	font-weight: bold;
+}
+.timeline {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+}
+ 
+	
+ 
+.icon {
+	display: flex;
+	background: linear-gradient(to right,transparent 45%, #b1dcf5 45%, #b1bdf5 45%, transparent 50%);
+	order: 2;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	flex-basis: 74px;
+}
+.icon>span {
+	font-size: 20px;
+	margin: auto;
+	background:#6b93e1;
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	border: 5px solid #815adc;
+}
+.info {
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	order:3;
+	width: 80%;
+	color: black;
+	padding-left: 10px;
+	background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255,255,255,0.18);
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+	transition: all .6s ease;
+	
+}
+
+
+.info {
+	margin-bottom: 3%;
+}
+ .info:hover {
+	transform: scale(1.05);
+
+ }
+
+.info h2 {
+	margin: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Russo One', sans-serif;
+	letter-spacing: 2px;
+}
+.info p {
+	line-height: 1.4;
+	font-family: montserrat;
+	font-weight: bold;
+}
+
+.info .fade-in{
+	animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+to {
+	opacity: 1;
+}
+	
+}
+@media (min-width: 640px) {
+	.info, .custom {
+		width: 40%;
+	}
+	.box-right .info {
+		order: 1;
+		padding-right: 0px;
+	}
+	.box-right .custom {
+		order: 3;
+	}
+}
+
+	
+

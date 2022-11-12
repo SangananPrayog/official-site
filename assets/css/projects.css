@@ -82,7 +82,6 @@ nav{
 .page-header>h1{
     font-family: 'Cabin';
     font-size: 75px;
-    line-height: 63px;
     background: linear-gradient(90deg, #762A7B 18.47%, #68D2F1 54.39%);
     background-size:39%;
     -webkit-background-clip: text;
